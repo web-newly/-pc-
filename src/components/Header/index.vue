@@ -85,7 +85,7 @@ export default {
         name:'search',
         params:{
           // 使用undefined解决params参数传递空字符串所发生的路径错误
-          keyword:this.keyword || undefined
+          keyword:this.keyword || undefined//如果传递空串路由跳转时地址会出错
         }
       }
       let isQueryEmpty = (Object.keys(this.$route.query).length === 0)
